@@ -13,6 +13,9 @@ import { AccountComponent } from './pages/account/account.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { AdminStreamersComponent } from './pages/admin-streamers/admin-streamers.component';
 import { AdminCommandsComponent } from './pages/admin-commands/admin-commands.component';
+import { CardCommandComponent } from './shared/views/card-command/card-command.component';
+import { CardGameComponent } from './shared/views/card-game/card-game.component';
+import { CardStreamerComponent } from './shared/views/card-streamer/card-streamer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { AdminCommandsComponent } from './pages/admin-commands/admin-commands.co
     AccountComponent,
     AdminComponent,
     AdminStreamersComponent,
-    AdminCommandsComponent
+    AdminCommandsComponent,
+    CardCommandComponent,
+    CardGameComponent,
+    CardStreamerComponent
   ],
   imports: [
     BrowserModule,
