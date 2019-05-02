@@ -1,11 +1,8 @@
 version: 2
 jobs:
   build:
-    branches:
-      ignore:
-        - master
     docker:
-      - image: circleci/node:11.9.0
+      - image: circleci/node:11.9.0-browsers
 
     steps:
       - checkout
@@ -23,6 +20,13 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          
+
       - run: npm run build
-      - run: npm run firebse-hosting-deploy 
+
+      - run:
+          name: deploy to firebase hosting
+          command:
+              if ["$CIRCLE_BRANCH" == "master"];
+              then
+                npm run firebse-hosting-deploy
+              fi
