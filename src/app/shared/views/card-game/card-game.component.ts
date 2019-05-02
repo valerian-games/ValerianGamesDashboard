@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Game } from '../../interfaces/game';
 
 @Component({
   selector: 'app-card-game',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-game.component.scss']
 })
 export class CardGameComponent implements OnInit {
+
+  @Input() game: Game
 
   constructor() { }
 
