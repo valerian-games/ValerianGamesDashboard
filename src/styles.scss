@@ -35,4 +35,10 @@ html, body {
     }
 }
 
+.tag {
+    &.is-link {
+        cursor: pointer;
+    }
+}
+
 @import "./node_modules/bulma/bulma.sass"
