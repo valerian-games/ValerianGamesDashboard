@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'StreamerBoxDashboard'`, () => {
+  it(`should have as title 'ValerianGamesDashboard'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('StreamerBoxDashboard');
+    expect(app.title).toEqual('ValerianGamesDashboard');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to StreamerBoxDashboard!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ValerianGamesDashboard!');
   });
 });

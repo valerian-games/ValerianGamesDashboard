@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: rgb(0, 102, 255);
+$secondary: rgb(20, 70, 163);
+$accent: rgb(19, 239, 255);
+
+$white: #FFFFFF;
+$light-white: rgb(231, 231, 231);
+
+$secondaryHover: rgb(17, 45, 97);
+
+$menu-item-color: $white;
+$menu-item-hover-color: white;
+$menu-item-hover-background-color: $secondary;
+$menu-item-active-background-color: $accent;
+$menu-label-color: $light-white;
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    &.is-secondary {
+        background-color: $secondary;
+        color: $white;
+        border-color: $secondary;
+
+        &:hover {
+            background-color: $secondaryHover;
+            color: $white;
+            border-color: $secondaryHover;
+        }
+    }
+}
+
+@import "./node_modules/bulma/bulma.sass"

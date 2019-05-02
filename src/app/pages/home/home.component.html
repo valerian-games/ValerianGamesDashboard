@@ -1,0 +1,107 @@
+<div class="columns is-gapless has-text-black">
+  <div class="column is-3 has-background-primary">
+    <aside class="section menu">
+      <ul class="menu-list">
+        <img
+          src="https://github.com/valerian-games/Valerian-Games-Logo/raw/master/exports/valerian-games-logo-horizontal%20%403x.png"
+          alt="Logo">
+        <li>
+          <a [routerLink]="['/']" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+            <span class="icon"><i class="fa fa-home"></i></span> Home
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/commands']" routerLinkActive="is-active">
+            <span class="icon"><i class="fas fa-terminal"></i></span> All Commands
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/games']" routerLinkActive="is-active">
+            <span class="icon"><i class="fas fa-gamepad"></i></span> Games
+          </a>
+
+          <ul>
+            <li>
+              <a [routerLink]="['/game1']" routerLinkActive="is-active">
+                Game 1
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/game2']" routerLinkActive="is-active">
+                Game 2
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a [routerLink]="['/setting']" routerLinkActive="is-active">
+            <span class="icon"><i class="fas fa-cog"></i></span> Settings
+          </a>
+        </li>
+        <li>
+          <a (click)="signout()">
+            <span class="icon"><i class="fas fa-sign-out-alt"></i></span> Sign Out
+          </a>
+        </li>
+        <div>
+          <p class="menu-label">
+            Admin Staff
+          </p>
+          <li>
+            <a [routerLink]="['/admin/dashboard']" routerLinkActive="is-active">
+              <span class="icon"><i class="fas fa-user-shield"></i></span> Admin Dashboard
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/admin/users']" routerLinkActive="is-active">
+              <span class="icon"><i class="fas fa-users"></i></span> Streamers
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/admin/commands']" routerLinkActive="is-active">
+              <span class="icon"><i class="fas fa-terminal"></i></span> Commands
+            </a>
+          </li>
+        </div>
+      </ul>
+    </aside>
+  </div>
+  <div class="column">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon"><i class="fas fa-bell"></i></span> &nbsp; 3
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              You got 10 new commands
+            </a>
+            <a class="navbar-item">
+              You got 10 new commands
+            </a>
+            <a class="navbar-item">
+              You got 10 new commands
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Clear
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-secondary">
+              Launch Game Engine
+            </a>
+            <a class="button is-secondary">
+              Account
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
