@@ -17,9 +17,22 @@ export class CommandsComponent implements OnInit {
     games: ['game-01']
   }
 
+  filterDropdown = false
+
   constructor() { }
 
   ngOnInit() {
+    try {
+      window.addEventListener("click", e => {
+        let event : any = e
+        if (!event.target.className.includes('filter'))
+          this.filterDropdown = false
+      });
+    } catch(e) {}
+  }
+
+  filter(filter) {
+    this.filterDropdown = false
   }
 
 }
