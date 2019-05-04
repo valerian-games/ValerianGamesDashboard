@@ -1,3 +1,71 @@
-<p>
-  dashboard works!
-</p>
+<div class="columns is-variable is-2">
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title">
+          3,120
+        </p>
+        <p class="subtitle">
+          Minutes Played
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title">
+          5
+        </p>
+        <p class="subtitle">
+          Games Owed
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title">
+          10,568
+        </p>
+        <p class="subtitle">
+          Commands Used
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title">
+          5
+        </p>
+        <p class="subtitle">
+          Mods
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+
+-->
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+
+        </div>
+      </div>
+      <div class="chart">
+        <ngx-charts-bar-vertical [view]="view" [scheme]="colorScheme" [results]="single" [gradient]="gradient"
+          [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
+          (select)="onSelect($event)">
+        </ngx-charts-bar-vertical>
+      </div>
+    </div>
+  </div>
+</section>
