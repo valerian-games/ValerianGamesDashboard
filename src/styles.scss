@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-$primary: rgb(0, 102, 255);
-$secondary: rgb(20, 70, 163);
-$accent: rgb(19, 239, 255);
+$primary: #97CB55;
+$secondary: #6BA24A;
+$accent: rgb(255, 255, 255);
 
 $white: #FFFFFF;
+$black: #000000;
 $light-white: rgb(231, 231, 231);
 
 $secondaryHover: rgb(17, 45, 97);
@@ -14,6 +15,7 @@ $menu-item-hover-color: white;
 $menu-item-hover-background-color: $secondary;
 $menu-item-active-background-color: $accent;
 $menu-label-color: $light-white;
+$menu-item-active-color: $black;
 
 
 html, body {

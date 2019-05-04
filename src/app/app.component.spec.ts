@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { CardCommandComponent } from './shared/views/card-command/card-command.component';
+import { CardGameComponent } from './shared/views/card-game/card-game.component';
+import { CardStreamerComponent } from './shared/views/card-streamer/card-streamer.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        CardCommandComponent,
+        CardGameComponent,
+        CardStreamerComponent
       ],
     }).compileComponents();
   }));

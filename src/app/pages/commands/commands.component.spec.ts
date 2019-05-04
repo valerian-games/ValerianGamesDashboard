@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CommandsComponent } from './commands.component';
+import { CardCommandComponent } from 'src/app/shared/views/card-command/card-command.component';
 
 describe('CommandsComponent', () => {
   let component: CommandsComponent;
@@ -8,7 +9,7 @@ describe('CommandsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CommandsComponent ]
+      declarations: [ CommandsComponent, CardCommandComponent ]
     })
     .compileComponents();
   }));

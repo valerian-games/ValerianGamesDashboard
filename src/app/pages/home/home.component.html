@@ -6,35 +6,35 @@
           src="https://raw.githubusercontent.com/valerian-games/Valerian-Games-Logo/master/exports/Valerian-games-logo-white-horizontal%403x.png"
           alt="Logo">
         <li>
-          <a [routerLink]="['/dashboard']" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/dashboard" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
             <span class="icon"><i class="fa fa-home"></i></span> Home
           </a>
         </li>
         <li>
-          <a [routerLink]="['/dashboard/commands']" routerLinkActive="is-active">
+          <a routerLink="/dashboard/commands" routerLinkActive="is-active">
             <span class="icon"><i class="fas fa-terminal"></i></span> All Commands
           </a>
         </li>
         <li>
-          <a [routerLink]="['/dashboard/games']" routerLinkActive="is-active">
+          <a routerLink="/dashboard/games" routerLinkActive="is-active">
             <span class="icon"><i class="fas fa-gamepad"></i></span> Games
           </a>
 
           <ul>
             <li>
-              <a [routerLink]="['/dashboard/games/game1']" routerLinkActive="is-active">
+              <a routerLink="/dashboard/games/game1" routerLinkActive="is-active">
                 Game 1
               </a>
             </li>
             <li>
-              <a [routerLink]="['/dashboard/games/game2']" routerLinkActive="is-active">
+              <a routerLink="/dashboard/games/game2" routerLinkActive="is-active">
                 Game 2
               </a>
             </li>
           </ul>
         </li>
         <li>
-          <a [routerLink]="['/dashboard/settings']" routerLinkActive="is-active">
+          <a routerLink="/dashboard/settings" routerLinkActive="is-active">
             <span class="icon"><i class="fas fa-cog"></i></span> Settings
           </a>
         </li>
@@ -48,17 +48,17 @@
             Admin Staff
           </p>
           <li>
-            <a [routerLink]="['/dashboard/admin/dashboard']" routerLinkActive="is-active">
+            <a routerLink="/dashboard/admin/dashboard" routerLinkActive="is-active">
               <span class="icon"><i class="fas fa-user-shield"></i></span> Admin Dashboard
             </a>
           </li>
           <li>
-            <a [routerLink]="['/dashboard/admin/users']" routerLinkActive="is-active">
+            <a routerLink="/dashboard/admin/users" routerLinkActive="is-active">
               <span class="icon"><i class="fas fa-users"></i></span> Streamers
             </a>
           </li>
           <li>
-            <a [routerLink]="['/dashboard/admin/commands']" routerLinkActive="is-active">
+            <a routerLink="/dashboard/admin/commands" routerLinkActive="is-active">
               <span class="icon"><i class="fas fa-terminal"></i></span> Commands
             </a>
           </li>
@@ -74,7 +74,7 @@
             <span class="icon"><i class="fas fa-bell"></i></span> &nbsp; 3
           </a>
 
-          <div class="navbar-dropdown">
+          <div class="navbar-dropdown is-right">
             <a class="navbar-item">
               You got 10 new commands
             </a>
@@ -95,7 +95,7 @@
             <a class="button is-secondary">
               Launch Game Engine
             </a>
-            <a class="button is-secondary" [routerLink]="['/dashboard/account']">
+            <a class="button is-secondary" routerLink="/dashboard/account">
               Account
             </a>
           </div>
